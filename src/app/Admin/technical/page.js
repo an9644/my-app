@@ -49,7 +49,7 @@ const page = () => {
         <div className="mt-5 d-flex justify-content-center gap-5">
            <button className="p-2 rounded text-primary fw-bold border-primary "><a style={{textDecoration: "none"}} href="/Admin/geographical">Geographical</a></button>
             <button className="p-2 rounded text-primary fw-bold border-primary "><a style={{textDecoration: "none"}} href="/Admin/technical">Technical</a></button>
-            <button className="p-2 rounded text-primary fw-bold border-primary "><a style={{textDecoration: "none"}} href="/Admin/scientific">Scientific</a></button>
+            <button className="p-2 rounded text-primary fw-bold border-primary "><a style={{textDecoration: "none"}} href="/Admin/scientifical">Scientific</a></button>
          </div>
         
         <div className="mt-5">

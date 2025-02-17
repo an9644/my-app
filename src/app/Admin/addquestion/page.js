@@ -57,11 +57,11 @@ console.log("Form data:", formData);
       alert("Question added successfully!");
 
       if (category === "Geography") {
-        router.push("/Admin/geography");
-      } else if (category === "Technical") {
+        router.push("/Admin/geographical");
+      } else if (category === "technical") {
         router.push("/Admin/technical");
       } else {
-        router.push("/Admin/scientific");
+        router.push("/Admin/scientifical");
       }
     }
     setIsSubmitting(false);
