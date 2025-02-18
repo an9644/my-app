@@ -42,6 +42,7 @@ const page = () => {
       const handleNext = (id, topic) => {
         router.push(`/Admin/update?id=${id}&topic=${topic}`);
     };
+    
   return (
     <>
     <Navbar />

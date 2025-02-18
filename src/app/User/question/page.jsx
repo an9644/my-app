@@ -62,7 +62,6 @@ const Page = () => {
       return;
     }
 
-    // ✅ If no existing record, create a new one
     if (!data) {
       await supabase.from('mark').insert([{ username, [topic]: updatedScore }]);
     } else {

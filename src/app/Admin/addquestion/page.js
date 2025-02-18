@@ -38,16 +38,23 @@ const AdminPage = () => {
       return;
     }
 
-    const tableName =category === "Geography" ? "geographical"
-                    : category === "Technical" ? "technical"
+    const tableName =category === "geographical" ? "geographical"
+                    : category === "technical" ? "technical"
                     : "scientifical";
 
                     console.log("Inserting into table:", tableName);
-console.log("Form data:", formData);
+            console.log("Form data:", formData);
 
 
-    const { error } = await supabase.from(tableName).insert([
-      { question, option1, option2, option3, option4,answer },
+    const { error } = await supabase
+    .from(tableName)
+    .insert([
+      { question,
+         option1,
+         option2,
+         option3, 
+         option4,
+         answer },
     ]);
 
     if (error) {
@@ -56,7 +63,7 @@ console.log("Form data:", formData);
     } else {
       alert("Question added successfully!");
 
-      if (category === "Geography") {
+      if (category === "geographical") {
         router.push("/Admin/geographical");
       } else if (category === "technical") {
         router.push("/Admin/technical");

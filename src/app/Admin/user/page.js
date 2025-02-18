@@ -22,16 +22,7 @@ const page = () => {
         fetchData();
       }, []);
 
-      //  const  fetchScore=async()=>{
-      //     try {
-      //       const {data,error}=
-
-      //     } catch (error) {
-      //       console.log(error);
-            
-            
-      //     }
-      //   }
+  
 
 
       const deleteData=async(id)=>{
